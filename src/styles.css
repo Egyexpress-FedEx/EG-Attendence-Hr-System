@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #FF5000;
+  --primary-hover: #e88400;
+  --secondary: #0b1736;
+  --secondary-light: #1a2957;
+  --body-bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --text-primary: #222222;
+  --text-secondary: #7d8798;
+  --border-color: #cecece;
+  --pill-bg: #eef2f7;
+  --shadow-sm: 0 2px 8px rgba(11, 23, 54, 0.05);
+  --shadow-md: 0 6px 20px rgba(11, 23, 54, 0.08);
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: all 0.3s ease;
+}
+body {
+  background: var(--body-bg);
+
+}
