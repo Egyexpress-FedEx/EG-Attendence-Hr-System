@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
+
+:host {
+  display: block;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 220px;
+
+  height: 100vh;
+  height: 100dvh;
+
+  background: #ffffff;
+  border-right: 1px solid #ebebf5;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  transition: all 0.3s ease;
+  z-index: 900;
+
+  box-shadow: 0 4px 24px rgba(80, 70, 180, 0.08);
+}
+
+.sidebar.expanded {
+  width: 220px;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* 
+   TOP
+ */
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 15px;
+  position: relative;
+  border-bottom: 1px solid #ebebf5;
+  z-index: 1000;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 12px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logo-circle span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand-name {
+  margin-left: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  margin-right: auto;
+}
+
+.collapsed .brand-name {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* 
+   TOGGLE BUTTON
+ */
+
+.toggle-btn {
+  /* position: absolute;
+  top: 20px;
+  right: 12px; */
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f4f3fc;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: right 0.3s ease;
+  z-index: 2000;
+}
+
+.toggle-btn:hover {
+  background: #e8e6fa;
+}
+
+.sidebar.collapsed .sidebar-top {
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+/* 
+   NAVIGATION
+ */
+
+.nav-section {
+  flex: 1;
+  padding: 15px 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-item {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 14px;
+  margin-bottom: 6px;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4a4a6a;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+  background: #f4f3fc;
+  color: var(--primary);
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: white;
+}
+
+.nav-item.active .nav-icon {
+  color: white;
+}
+
+.nav-icon {
+  width: 22px;
+  min-width: 22px;
+  font-size: 20px;
+  text-align: center;
+  color: #7f7fb0;
+}
+
+.nav-label {
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.collapsed .nav-item {
+  justify-content: center;
+  padding: 0;
+}
+
+.collapsed .nav-label {
+  display: none;
+}
+
+
+/* 
+   DIVIDER
+ */
+
+.divider {
+  height: 1px;
+  background: #ebebf5;
+  margin: 0 12px;
+}
+
+/* 
+   BOTTOM
+ */
+
+.sidebar-bottom {
+  padding: 12px 10px;
+  margin-top: auto;
+}
+
+.sidebar-bottom .nav-item {
+  margin-bottom: 6px;
+}
+
+/* 
+   THEME
+ */
+
+.theme-toggle {
+  margin: 10px;
+  padding: 4px;
+  background: #f4f3fc;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.theme-btn {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  color: #7f7fb0;
+}
+
+.theme-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.collapsed .theme-toggle {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+   TABLET
+ */
+
+@media (max-width: 992px) {
+  .sidebar.expanded {
+    width: 200px;
+  }
+
+  .sidebar.collapsed {
+    width: 70px;
+  }
+}
+
+/* 
+   MOBILE
+ */
+
+@media (max-width: 600px) {
+
+  .sidebar.expanded {
+    width: 180px;
+  }
+
+  /* .sidebar.collapsed {
+    width: 60px;
+  }
+
+  .sidebar-top {
+    min-height: 60px;
+    padding: 0 10px;
+  } */
+
+  .logo-circle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .logo-circle span {
+    font-size: 16px;
+  }
+
+  .brand-name {
+    font-size: 15px;
+  }
+
+  .nav-item {
+    height: 42px;
+    margin-bottom: 4px;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+  }
+
+  .theme-btn {
+    width: 30px;
+    height: 30px;
+  }
+}

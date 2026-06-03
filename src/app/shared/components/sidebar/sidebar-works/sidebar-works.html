@@ -1,0 +1,76 @@
+<aside
+  class="sidebar"
+  [class.expanded]="isExpanded"
+  [class.collapsed]="!isExpanded"
+>
+<!-- sidebar top -->
+  <div class="sidebar-top ">
+    <div class="logo-circle">
+      <span>EGX</span>
+    </div>
+
+    <span class="brand-name">EGexpress</span>
+
+    <button
+      class="toggle-btn"
+      (click)="toggle()"
+      [attr.aria-label]="isExpanded ? 'Collapse' : 'Expand'"
+    >
+      <i
+        class="ti"
+        [class.ti-chevron-left]="isExpanded"
+        [class.ti-chevron-right]="!isExpanded"
+      ></i>
+    </button>
+  </div>
+
+ <!-- main nav -->
+  <nav class="nav-section">
+    @for (item of mainNav; track $index) {
+  <a
+    class="nav-item"
+    [routerLink]="item.routerLink"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <i class="ti nav-icon" [ngClass]="item.icon"></i>
+    <span class="nav-label">{{ item.label }}</span>
+  </a>
+}
+  </nav>
+
+  <div class="divider"></div>
+
+<!-- bottom nav logout+themes -->
+  <div class="sidebar-bottom ">
+    @for (item of bottomNav; track $index) {
+        <a
+      class="nav-item mb-4"
+      (click)="logout()"
+    >
+      <i class="ti nav-icon" [ngClass]="item.icon"></i>
+      <span class="nav-label">{{ item.label }}</span>
+    </a>
+
+    }
+    
+    <div class="theme-toggle">
+      <button
+        class="theme-btn"
+        [class.active]="!isDarkTheme()"
+        (click)="setTheme(false)"
+      >
+        <i class="ti ti-sun"></i>
+      </button>
+
+      <button
+        class="theme-btn"
+        [class.active]="isDarkTheme()"
+        (click)="setTheme(true)"
+      >
+        <i class="ti ti-moon"></i>
+      </button>
+    </div>
+  </div>
+
+</aside>

@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<div class="layout">
+
+  <app-sidebar-works
+    [isExpanded]="isExpanded"
+    (toggleSidebar)="toggleSidebar()">
+  </app-sidebar-works>
+
+  <main
+    class="content"
+    [class.content-expanded]="isExpanded"
+    [class.content-collapsed]="!isExpanded">
+
+    <router-outlet></router-outlet>
+
+  </main>
+
+</div>
