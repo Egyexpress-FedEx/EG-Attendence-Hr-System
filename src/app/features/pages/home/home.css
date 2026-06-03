@@ -115,14 +115,13 @@
  
 
  .attendance-table tbody tr:nth-child(odd) td {
-  background-color: #f8f9fc !important;
+  background-color: var(--oddbg) !important;
   
 }
 
 .attendance-table tbody tr:nth-child(even) td {
-    background-color: #efefef !important;
+    background-color: var(--evenbg) !important;
 
-  color: #212529;
 }
 .attendance-table {
   margin-bottom: 0;
@@ -144,8 +143,9 @@
 .attendance-table tbody td {
   padding: 3px 5px  ;
   vertical-align: middle;
-  
+  border-color: var(--tr-borfer);
   border-radius: 3px;
+  color:var(--secondary);
 }
 /* Pills */
 .serial-pill
@@ -168,7 +168,7 @@
 
 .pagination {
   gap: 6px;
-   --bs-pagination-bg: transparent;
+  background: transparent;
 }
 
 .page-link {
@@ -179,17 +179,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--secondary);
   cursor: pointer;
+  color:var(--page-number-color); ;
 }
 .activee{
   background: var(--pill-bg) !important;
   border-radius: 50% !important;
+  
 }
 
 .next-btn {
   background: var(--secondary);
-  color: white !important;
+  color: var(--next-color) !important;
 }
 
 /* 
@@ -234,14 +235,22 @@
   }
 
   .attendance-table tr {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 16px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
     margin-bottom: 16px;
     padding: 16px;
   }
+.attendance-table tbody tr:nth-child(odd) td {
+  background-color: var(--card-bg) !important;
+  
+}
 
+.attendance-table tbody tr:nth-child(even) td {
+    background-color: var(--card-bg) !important;
+
+}
   .attendance-table td {
     border: none;
     display: flex;
@@ -251,7 +260,10 @@
     text-align: right;
     font-size: 13px;
   }
-
+.attendance-table tbody tr:hover td {
+  background-color: #a5937c !important;
+  color: white;
+}
   .attendance-table td::before {
     font-weight: 600;
     color: var(--secondary);

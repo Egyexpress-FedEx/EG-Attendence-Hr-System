@@ -20,8 +20,8 @@
   height: 100vh;
   height: 100dvh;
 
-  background: #ffffff;
-  border-right: 1px solid #ebebf5;
+  background: var(--sidebarbackground);
+  border-right: 1px solid var(--sidebar-border);
 
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@
   min-height: 70px;
   padding: 0 15px;
   position: relative;
-  border-bottom: 1px solid #ebebf5;
+  border-bottom: 1px solid var(--sidebar-border);
   z-index: 1000;
 }
 
@@ -198,7 +198,7 @@
 
 .divider {
   height: 1px;
-  background: #ebebf5;
+  background: var(--before-bg);
   margin: 0 12px;
 }
 
@@ -222,7 +222,7 @@
 .theme-toggle {
   margin: 10px;
   padding: 4px;
-  background: #f4f3fc;
+  background: var(--togle-bg);
   border-radius: 50px;
   display: flex;
   justify-content: center;
