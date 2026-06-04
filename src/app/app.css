@@ -5,7 +5,7 @@
 
 .content {
   min-height: 100vh;
-  padding: 20px;
+ 
   transition: all 0.3s ease;
 }
 
@@ -35,9 +35,9 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-  .content {
+  /* .content {
     padding: 12px;
-  }
+  } */
 
   .content-expanded {
     margin-left: 200px;

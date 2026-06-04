@@ -19,12 +19,17 @@ export class SidebarWorks  implements OnInit {
   
 
 ngOnInit(): void {
-  const savedTheme = localStorage.getItem('theme');
+   if (typeof window !== 'undefined') {
 
-  if (savedTheme === 'dark') {
-    this.isDarkTheme.set(true);
-    document.body.classList.add('dark-theme');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+      this.isDarkTheme.set(true);
+      document.body.classList.add('dark-theme');
+    }
+
   }
+  
 }
   @Input() isExpanded = true;
   @Output() toggleSidebar = new EventEmitter<void>();
@@ -61,6 +66,7 @@ ngOnInit(): void {
     document.body.classList.remove('dark-theme');
     localStorage.setItem('theme', 'light');
   }
+  
   }
   logout(){
      this.router.navigate(['/login'])

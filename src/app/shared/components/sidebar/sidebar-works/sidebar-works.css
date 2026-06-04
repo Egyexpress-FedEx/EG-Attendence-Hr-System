@@ -79,7 +79,7 @@
   margin-left: 12px;
   font-size: 17px;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--secondary);
   white-space: nowrap;
   transition: all 0.3s ease;
   margin-right: auto;
@@ -151,7 +151,7 @@
   border-radius: 12px;
   text-decoration: none;
   cursor: pointer;
-  color: #4a4a6a;
+  color: var( --nav-item-color);
   transition: all 0.25s ease;
 }
 
