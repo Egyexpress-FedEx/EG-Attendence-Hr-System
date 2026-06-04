@@ -38,11 +38,11 @@ ngOnInit(): void {
   router=inject(Router)
 
   mainNav: NavItem[] = [
-    { label: 'Dashboard', icon: 'ti-layout-dashboard', routerLink: '/dashboard' },
+    { label: 'Dashboard', icon: 'ti-layout-dashboard', routerLink: '/Dashboard' },
     { label: 'Home', icon: 'ti-home', routerLink: '/home' },
-    { label: 'Finger Print', icon: 'ti-fingerprint', routerLink: '/finger-print' },
-    { label: 'Finger  Device', icon: 'ti-device-imac', routerLink: '/finger-device' },
-    { label: 'Help', icon: 'ti-help-circle', routerLink: '/help' },
+    { label: 'Finger Print', icon: 'ti-fingerprint', routerLink: '/Fingerprint' },
+    { label: 'Finger  Device', icon: 'ti-device-imac', routerLink: '/FingerDevice' },
+    { label: 'Help', icon: 'ti-help-circle', routerLink: '/Help' },
     { label: 'Login', icon: 'ti-login',routerLink: '/login' ,},
   ];
 
