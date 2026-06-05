@@ -5,7 +5,6 @@
 
 .content {
   min-height: 100vh;
- 
   transition: all 0.3s ease;
 }
 
@@ -45,7 +44,7 @@
   }
 
   .content-collapsed {
-    margin-left: 50px;
-    width: calc(100% - 50px);
+    margin-left: 60px !important;
+    width: calc(100% - 60px) !important;
   }
 }
