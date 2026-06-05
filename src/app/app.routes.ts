@@ -18,6 +18,11 @@ export const routes: Routes = [
         .then(m => m.Dashboard) 
     },
     {
+        path: 'attendance',
+        loadComponent: () => import('./features/pages/attendance/attendance')
+        .then(m => m.Attendance) 
+    },
+    {
         path: 'Fingerprint',
         loadComponent: () => import('./features/pages/finger-print/finger-print')
         .then(m => m.FingerPrint) 

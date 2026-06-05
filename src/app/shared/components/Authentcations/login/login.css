@@ -12,13 +12,11 @@
 
 .login-left {
   flex: 1.8;
-
   position: relative;
-
-  background-image: url('/airplan fedex.jpg');
-
-  background-size: cover;
+  background-image: url('/login-right.png');
+   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; 
 }
 
 .overlay {
@@ -68,12 +66,7 @@
 
   padding: 40px;
 
-  background:
-    linear-gradient(
-      180deg,
-      var(--primary),
-      #ff7a38
-    );
+  background: var(--login-right-prime) !important;
 }
 
 /* 
@@ -126,7 +119,7 @@
 
   margin-bottom: 8px;
 
-  color: var(--text-secondary);
+  color: var(--secondary);
 
   font-weight: 500;
 }
@@ -157,7 +150,10 @@
 
   background: var(--body-bg);
 
-  color: var(--text-primary);
+  color: var(--text-primary) ;
+}
+input::placeholder{
+  color: var(--input-placeholder) !important;
 }
 
 .form-control:focus {

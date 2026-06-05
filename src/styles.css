@@ -26,7 +26,7 @@
   --transition: all 0.3s ease;
   --sidebarbackground:#ffffff;
   --togle-bg:#ffffff;
-  --sidebar-border:##ebebf5;
+  --sidebar-border:#ebebf5;
   --before-bg:#ebebf5;
   --oddbg:#f8f9fc;
   --evenbg:#efefef;
@@ -34,14 +34,17 @@
   --next-color:#ffffff;
   --page-number-color:#111a2e;
   --nav-item-color:#4a4a6a;
+  --pages-pading : 24px;
+  --input-placeholder:#808082;
+  --login-right-prime:#FF5000;
+  --scroll-color:#9ca3af;
 }
 body {
   margin: 0;
   padding: 0;
-    background: var(--body-bg);
+  background: var(--body-bg);
   color: var(--text-primary);
   transition: var(--transition);
-
 }
 body.dark-theme {
   --primary: #ff6a2b;
@@ -63,6 +66,7 @@ body.dark-theme {
   --sidebarbackground:#0f172a;
   --togle-bg:#0f172a;
   --sidebar-border:#585858;
+  --topborder-side:#585858;
   --before-bg:#585858;
   --oddbg:#111a2e;
   --evenbg:#515359;
@@ -70,6 +74,10 @@ body.dark-theme {
   --next-color:#111a2e;
   --page-number-color:#111a2e;
   --nav-item-color:#aeaec8;
+  --input-placeholder:#686868;
+  --login-right-prime:#0b1220;
+  --scroll-color:#4a5362;
+  
 }
 /* Desktop Large */
 html {

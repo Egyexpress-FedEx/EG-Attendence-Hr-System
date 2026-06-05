@@ -40,12 +40,12 @@
   } */
 
   .content-expanded {
-    margin-left: 200px;
-    width: calc(100% - 200px);
+    margin-left: 180px;
+    width: calc(100% - 180px);
   }
 
   .content-collapsed {
-    margin-left: 60px;
-    width: calc(100% - 60px);
+    margin-left: 50px;
+    width: calc(100% - 50px);
   }
 }

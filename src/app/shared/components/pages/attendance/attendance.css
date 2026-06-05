@@ -1,0 +1,325 @@
+.page-wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+  padding: var(--pages-pading);
+}
+
+/* Header */
+
+.page-title {
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  color: var(--text-secondary);
+}
+
+/* Button */
+
+.custom-btn {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  transition: var(--transition);
+  min-width: 160px;
+}
+
+.custom-btn:hover {
+  background: transparent;
+  color: var(--primary) !important;
+}
+
+/* Card */
+
+.custom-card {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  background: var(--card-bg);
+}
+
+/* Form */
+
+.form-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.form-select {
+  height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.form-select:focus {
+  border-color: var(--secondary);
+  box-shadow: none;
+}
+.search-input {
+  height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  padding-right: 45px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: var(--secondary);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.reset-btn,
+.filter-btn {
+  height: 48px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.filter-btn {
+   background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.filter-btn:hover {
+ background: var(--primary);
+  border-color: var(--primary);
+  color: white !important;
+}
+
+.reset-btn {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.reset-btn:hover {
+    background: var(--primary);
+  border-color: var(--primary);
+  color: white !important;
+}
+
+/* 
+   TABLE
+ */
+ 
+
+ .attendance-table tbody tr:nth-child(odd) td {
+  background-color: var(--oddbg) !important;
+  
+}
+
+.attendance-table tbody tr:nth-child(even) td {
+    background-color: var(--evenbg) !important;
+
+}
+.attendance-table {
+  margin-bottom: 0;
+}
+.attendance-table tbody tr:hover td {
+  background-color: #a5937c !important;
+  color: white;
+}
+.attendance-table thead th {
+  padding: 15px 0px;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-color);
+  
+}
+.attendance-table tbody td {
+  padding: 3px 5px  ;
+  vertical-align: middle;
+  border-color: var(--tr-borfer);
+  border-radius: 3px;
+  color:var(--secondary);
+}
+/* Pills */
+.serial-pill
+ {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--secondary);
+}
+/* PAGINATION */
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination {
+  gap: 6px;
+  background: transparent;
+}
+
+.page-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color:var(--page-number-color); ;
+}
+.activee{
+  background: var(--pill-bg) !important;
+  border-radius: 50% !important;
+  
+}
+
+.next-btn {
+  background: var(--secondary);
+  color: var(--next-color) !important;
+}
+
+/* 
+   TABLET
+ */
+
+@media (max-width: 992px) {
+
+  .page-wrapper {
+    padding: 16px;
+  }
+
+  .custom-btn {
+    width: 100%;
+  }
+}
+
+/* 
+   MOBILE CARD VIEW
+ */
+
+@media (max-width: 768px) {
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .attendance-table thead {
+    display: none;
+  }
+
+  .attendance-table,
+  .attendance-table tbody,
+  .attendance-table tr,
+  .attendance-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .attendance-table tr {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+.attendance-table tbody tr:nth-child(odd) td {
+  background-color: var(--card-bg) !important;
+  
+}
+
+.attendance-table tbody tr:nth-child(even) td {
+    background-color: var(--card-bg) !important;
+
+}
+  .attendance-table td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    text-align: right;
+    font-size: 13px;
+  }
+.attendance-table tbody tr:hover td {
+  background-color: #a5937c !important;
+  color: white;
+}
+  .attendance-table td::before {
+    font-weight: 600;
+    color: var(--secondary);
+    text-align: left;
+  }
+
+  .attendance-table td:nth-child(1)::before {
+    content: "Employee ID";
+  }
+
+  .attendance-table td:nth-child(2)::before {
+    content: "Name";
+  }
+
+  .attendance-table td:nth-child(3)::before {
+    content: "Year";
+  }
+
+  .attendance-table td:nth-child(4)::before {
+    content: "Month";
+  }
+
+  .attendance-table td:nth-child(5)::before {
+    content: "Day";
+  }
+
+  .attendance-table td:nth-child(6)::before {
+    content: "Check-in";
+  }
+
+  .attendance-table td:nth-child(7)::before {
+    content: "Check-out";
+  }
+
+  .attendance-table td:nth-child(8)::before {
+    content: "Attendance";
+  }
+
+  .serial-pill,
+  .year-pill {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .pagination-wrapper {
+    justify-content: center;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .page-link {
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
+  }
+}

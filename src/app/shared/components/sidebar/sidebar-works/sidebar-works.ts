@@ -17,6 +17,11 @@ export interface NavItem {
 })
 export class SidebarWorks  implements OnInit {
   
+  @Input() isExpanded = true;
+  @Output() toggleSidebar = new EventEmitter<void>();
+
+  isDarkTheme = signal(false);
+  router=inject(Router)
 
 ngOnInit(): void {
    if (typeof window !== 'undefined') {
@@ -31,15 +36,13 @@ ngOnInit(): void {
   }
   
 }
-  @Input() isExpanded = true;
-  @Output() toggleSidebar = new EventEmitter<void>();
 
-  isDarkTheme = signal(false);
-  router=inject(Router)
+
 
   mainNav: NavItem[] = [
     { label: 'Dashboard', icon: 'ti-layout-dashboard', routerLink: '/Dashboard' },
     { label: 'Home', icon: 'ti-home', routerLink: '/home' },
+    { label: 'Attendance', icon: 'ti-calendar-check', routerLink: '/attendance' },
     { label: 'Finger Print', icon: 'ti-fingerprint', routerLink: '/Fingerprint' },
     { label: 'Finger  Device', icon: 'ti-device-imac', routerLink: '/FingerDevice' },
     { label: 'Help', icon: 'ti-help-circle', routerLink: '/Help' },
@@ -47,15 +50,12 @@ ngOnInit(): void {
   ];
 
   bottomNav: NavItem[] = [
-    
     { label: 'Log out', icon: 'ti-logout' , routerLink: '/login' },
   ];
   
-
   toggle(): void {
     this.toggleSidebar.emit();
   }
-
 
   setTheme(dark: boolean): void {
     this.isDarkTheme.set(dark);
@@ -66,8 +66,8 @@ ngOnInit(): void {
     document.body.classList.remove('dark-theme');
     localStorage.setItem('theme', 'light');
   }
-  
   }
+
   logout(){
      this.router.navigate(['/login'])
   }
