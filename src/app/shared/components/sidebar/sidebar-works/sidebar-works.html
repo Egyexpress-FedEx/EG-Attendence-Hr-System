@@ -3,13 +3,13 @@
   [class.expanded]="isExpanded"
   [class.collapsed]="!isExpanded"
 >
-<!-- sidebar top -->
-  <div class="sidebar-top ">
+  <!-- sidebar top -->
+  <div class="sidebar-top">
     <div class="logo-circle">
       <span>EG</span>
     </div>
 
-    <span class="brand-name">express</span>
+    <span class="brand-name">xpress</span>
 
     <button
       class="toggle-btn"
@@ -24,38 +24,239 @@
     </button>
   </div>
 
- <!-- main nav -->
+  <!-- main nav -->
   <nav class="nav-section">
-    @for (item of mainNav; track $index) {
-  <a
-    class="nav-item"
-    [routerLink]="item.routerLink"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-  >
-    <i class="ti nav-icon" [ngClass]="item.icon"></i>
-    <span class="nav-label">{{('sidebar.'+item.label) | translate }}</span> 
-  </a>
-}
+
+    <!-- Dashboard -->
+    <a
+      class="nav-item"
+      routerLink="/Dashboard"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <i class="ti ti-layout-dashboard nav-icon"></i>
+      <span class="nav-label">{{ 'sidebar.Dashboard' | translate }}</span>
+    </a>
+
+    <!-- Home -->
+    <a
+      class="nav-item"
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <i class="ti ti-home nav-icon"></i>
+      <span class="nav-label">{{ 'sidebar.Home' | translate }}</span>
+    </a>
+
+    <!-- Attendance Module -->
+    <div class="menu-group">
+
+      <a
+        class="nav-item dropdown-toggle-item"
+        (click)="isAttendanceOpen.set(!isAttendanceOpen())"
+      >
+        <i class="ti ti-users nav-icon"></i>
+
+        <span class="nav-label">
+          {{ 'sidebar.Atten-Management' | translate }}
+        </span>
+
+        <i
+          class="ti dropdown-icon"
+          [class.ti-chevron-down]="!isAttendanceOpen()"
+          [class.ti-chevron-up]="isAttendanceOpen()"
+        ></i>
+      </a>
+
+      @if (isAttendanceOpen()) {
+
+        <div class="submenu">
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/attendance"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-calendar-check nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Attendance' | translate }}
+            </span>
+          </a>
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/overTime"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-clock-plus  nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Over Time' | translate }}
+            </span>
+          </a>
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/FingerDevice"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-device-imac nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Finger Device' | translate }}
+            </span>
+          </a>
+
+        </div>
+
+      }
+
+    </div>
+    <!-- leaving Module -->
+    <div class="menu-group">
+
+      <a
+        class="nav-item dropdown-toggle-item"
+        (click)="leavesMangement.set(!leavesMangement())"
+      >
+        <i class="ti ti-plane-departure nav-icon"></i>
+
+        <span class="nav-label">
+          {{ 'sidebar.leaving' | translate }}
+        </span>
+
+        <i
+          class="ti dropdown-icon"
+          [class.ti-chevron-down]="!leavesMangement()"
+          [class.ti-chevron-up]="leavesMangement()"
+        ></i>
+      </a>
+
+      @if (leavesMangement()) {
+
+        <div class="submenu">
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/leaveReq"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-file-text nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Leave request' | translate }}
+            </span>
+          </a>
+          
+          <a
+            class="nav-item sub-item"
+            routerLink="/Approvals"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-circle-check nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Approvals' | translate }}
+            </span>
+          </a>
+
+        </div>
+
+      }
+
+    </div>
+    <!-- recurments Module -->
+    <div class="menu-group">
+
+      <a
+        class="nav-item dropdown-toggle-item"
+        (click)="isrecuitmenrmangment.set(!isrecuitmenrmangment())"
+      >
+        <i class="ti ti-user-search nav-icon"></i>
+
+        <span class="nav-label">
+          {{ 'sidebar.Recruitment' | translate }}
+        </span>
+
+        <i
+          class="ti dropdown-icon"
+          [class.ti-chevron-down]="!isrecuitmenrmangment()"
+          [class.ti-chevron-up]="isrecuitmenrmangment()"
+        ></i>
+      </a>
+
+      @if (isrecuitmenrmangment()) {
+
+        <div class="submenu">
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/jobOffers"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-briefcase nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Job Offers' | translate }}
+            </span>
+          </a>
+
+          <a
+            class="nav-item sub-item"
+            routerLink="/applications"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-file-description nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.applications' | translate }}
+            </span>
+          </a>
+
+        </div>
+
+      }
+
+    </div>
+
+    <!-- Help -->
+    <a
+      class="nav-item"
+      routerLink="/Help"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <i class="ti ti-help-circle nav-icon"></i>
+      <span class="nav-label">{{ 'sidebar.Help' | translate }}</span>
+    </a>
+
+    <!-- Login -->
+    <a
+      class="nav-item"
+      routerLink="/login"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <i class="ti ti-login nav-icon"></i>
+      <span class="nav-label">{{ 'sidebar.Login' | translate }}</span>
+    </a>
+
   </nav>
 
   <div class="divider"></div>
 
-<!-- bottom nav logout+themes -->
-  <div class="sidebar-bottom ">
-    @for (item of bottomNav; track $index) {
-        <a
-      class="nav-item mb-4"
-      (click)="logout()"
-    >
-      <i class="ti nav-icon" [ngClass]="item.icon"></i>
-      <span class="nav-label">{{ item.label | translate }}</span>
-    </a>
+  <!-- bottom nav -->
+  <div class="sidebar-bottom">
 
+    @for (item of bottomNav; track $index) {
+      <a
+        class="nav-item mb-4"
+        (click)="logout()"
+      >
+        <i class="ti nav-icon" [ngClass]="item.icon"></i>
+        <span class="nav-label">{{ ('sidebar.'+item.label) | translate }}</span>
+      </a>
     }
-        <div class="language-wrapper">
-          <app-translate-btn></app-translate-btn>
-       </div>
+
+    <div class="language-wrapper">
+      <app-translate-btn></app-translate-btn>
+    </div>
+
     <div class="theme-toggle">
       <button
         class="theme-btn"
@@ -73,6 +274,6 @@
         <i class="ti ti-moon"></i>
       </button>
     </div>
-  </div>
 
+  </div>
 </aside>

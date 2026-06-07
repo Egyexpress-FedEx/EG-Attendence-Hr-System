@@ -3,10 +3,17 @@
     "Home": "Home",
     "Dashboard": "Dashboard",
     "Attendance": "Attendance",
-    "Finger Print": "Finger Print",
-    "Finger  Device": "Finger Device",
+    "Over Time": "Over Time",
+    "Finger Device": "Finger Device",
     "Help": "Help Center",
     "Login": "Login",
-    "Log out": "Log out"
+    "Log out": "Log out",
+     "Atten-Management": "Attendance ",
+     "leaving": "leaving  ",
+     "Leave request": "Leave request  ",
+     "Recruitment":"Recruitment",
+     "applications":"applications",
+     "Job Offers":"Job Offers",
+     "Approvals":"Approvals"
   }
 }

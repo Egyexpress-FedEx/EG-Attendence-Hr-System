@@ -3,10 +3,17 @@
         "Home": "الرئيسيه",
         "Dashboard": "لوحه التحكم",
         "Attendance": "جدول الحضور",
-        "Finger Print": "البصمه",
-        "Finger  Device": "جهاز البصمه",
-        "Help": "مركز المشاعد",
+        "Over Time": "وقت اضافي",
+        "Finger Device": "جهاز البصمه",
+        "Help": "مركز المساعده",
         "Login": "تسجيل الدخول",
-        "Log out": "تسجيل الخروج"
+        "Log out": "تسجيل الخروج",
+        "Atten-Management": "إدارة الحضور ",
+        "leaving":"إدارة الإجازات",
+        "Leave request":"طلب اجازه",
+        "Recruitment":"التوظيف",
+        "applications":"طلبات توظيف",
+        "Job Offers": "العروض الوظيفيه",
+        "Approvals": "الموفقات"
     }
 }

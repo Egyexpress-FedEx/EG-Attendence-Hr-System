@@ -22,8 +22,17 @@ export class SidebarWorks  implements OnInit {
   @Input() isExpanded = true;
   @Output() toggleSidebar = new EventEmitter<void>();
 
+  //#region declartions
+
   isDarkTheme = signal(false);
-  router=inject(Router)
+  router=inject(Router);
+  isAttendanceOpen =signal(false) ;
+  ispayrollmangment=signal(false);
+  isemployeemangment=signal(false);
+  isrecuitmenrmangment=signal(false);
+  performanceMangement=signal(false);
+  leavesMangement=signal(false);
+ //#endregion
 
 ngOnInit(): void {
    if (typeof window !== 'undefined') {
@@ -39,18 +48,6 @@ ngOnInit(): void {
   
 }
 
-
-
-  mainNav: NavItem[] = [
-    { label: 'Dashboard', icon: 'ti-layout-dashboard', routerLink: '/Dashboard' },
-    { label: 'Home', icon: 'ti-home', routerLink: '/home' },
-    { label: 'Attendance', icon: 'ti-calendar-check', routerLink: '/attendance' },
-    { label: 'Finger Print', icon: 'ti-fingerprint', routerLink: '/Fingerprint' },
-    { label: 'Finger  Device', icon: 'ti-device-imac', routerLink: '/FingerDevice' },
-    { label: 'Help', icon: 'ti-help-circle', routerLink: '/Help' },
-    { label: 'Login', icon: 'ti-login',routerLink: '/login' ,},
-  ];
-
   bottomNav: NavItem[] = [
     { label: 'Log out', icon: 'ti-logout' , routerLink: '/login' },
   ];
@@ -58,7 +55,7 @@ ngOnInit(): void {
   toggle(): void {
     this.toggleSidebar.emit();
   }
-
+ //#region  dark mode
   setTheme(dark: boolean): void {
     this.isDarkTheme.set(dark);
      if (dark) {
@@ -69,10 +66,11 @@ ngOnInit(): void {
     localStorage.setItem('theme', 'light');
   }
   }
+  //#endregion
 
+  //#region logout hundeltion
   logout(){
      this.router.navigate(['/login'])
   }
-
-  
+  //#endregion
 }
