@@ -13,8 +13,9 @@
 .login-left {
   flex: 1.8;
   position: relative;
-  background-image: url('/login-right.png');
-   background-size: cover;
+  background-image: url('/images/login-right.png');
+  background-size: cover;
+  object-fit: fill;
   background-position: center;
   background-repeat: no-repeat; 
 }

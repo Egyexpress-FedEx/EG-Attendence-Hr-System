@@ -1,3 +1,12 @@
 {
-    "Home":"Home"
+    "sidebar": {
+    "Home": "Home",
+    "Dashboard": "Dashboard",
+    "Attendance": "Attendance",
+    "Finger Print": "Finger Print",
+    "Finger  Device": "Finger Device",
+    "Help": "Help Center",
+    "Login": "Login",
+    "Log out": "Log out"
+  }
 }

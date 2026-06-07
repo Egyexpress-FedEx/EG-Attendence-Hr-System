@@ -1,4 +1,12 @@
 {
-    "Home" :"رئنيسه" ,
-    "Need More Help?" :"تختاج الي مساهده"
+    "sidebar": {
+        "Home": "الرئيسيه",
+        "Dashboard": "لوحه التحكم",
+        "Attendance": "جدول الحضور",
+        "Finger Print": "البصمه",
+        "Finger  Device": "جهاز البصمه",
+        "Help": "مركز المشاعد",
+        "Login": "تسجيل الدخول",
+        "Log out": "تسجيل الخروج"
+    }
 }

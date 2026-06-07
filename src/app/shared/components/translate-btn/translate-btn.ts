@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { Translation } from '../../../core/services/translation';
 
 @Component({
   selector: 'app-translate-btn',
@@ -7,16 +8,6 @@ import { Component, signal } from '@angular/core';
   styleUrl: './translate-btn.css',
 })
 export class TranslateBtn {
-  currentLang = signal<'en' | 'ar'>('en');
+  translate = inject(Translation);
 
-  toggleLanguage(): void {
-    const lang = this.currentLang() === 'en' ? 'ar' : 'en';
-
-    this.currentLang.set(lang);
-
-    localStorage.setItem('lang', lang);
-
-    // هنا هتحطي ngx-translate بعدين
-    // this.translateService.use(lang);
-  }
 }

@@ -1,9 +1,9 @@
 <button
   class="lang-btn"
-  (click)="toggleLanguage()"
+  (click)="translate.switclangg(translate.currentLang() === 'en' ? 'ar' : 'en' )"
   [attr.aria-label]="'Change Language'"
 >
   <span>
-    {{ currentLang() }}
+    {{ translate.currentLang() === 'en' ? 'ar' : 'en' }}
   </span>
 </button>

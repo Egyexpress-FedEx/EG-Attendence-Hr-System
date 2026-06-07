@@ -34,7 +34,7 @@
     [routerLinkActiveOptions]="{ exact: true }"
   >
     <i class="ti nav-icon" [ngClass]="item.icon"></i>
-    <span class="nav-label">{{ item.label |translate }}</span>
+    <span class="nav-label">{{('sidebar.'+item.label) | translate }}</span> 
   </a>
 }
   </nav>
