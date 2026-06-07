@@ -1,0 +1,9 @@
+<button
+  class="lang-btn"
+  (click)="toggleLanguage()"
+  [attr.aria-label]="'Change Language'"
+>
+  <span>
+    {{ currentLang() }}
+  </span>
+</button>

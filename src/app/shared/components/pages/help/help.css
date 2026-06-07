@@ -3,11 +3,7 @@
 }
 
 .help-hero {
-  background: linear-gradient(
-    135deg,
-    var(--primary),
-    #ff7b39
-  );
+  background: var(--login-right-prime);
 
   color: white;
   border-radius: var(--radius-lg);
@@ -122,8 +118,8 @@
 
   background: linear-gradient(
     135deg,
-    var(--secondary-light),
-    var(--secondary)
+    #1a2957,
+    #0b1736
     
   );
 

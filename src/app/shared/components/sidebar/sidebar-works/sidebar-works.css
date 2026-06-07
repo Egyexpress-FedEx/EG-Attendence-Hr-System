@@ -272,6 +272,15 @@
   flex-direction: column;
   align-items: center;
 }
+.language-wrapper {
+  margin: 10px;
+  margin-bottom: 12px;
+}
+
+.collapsed .language-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 /* 
    TABLET

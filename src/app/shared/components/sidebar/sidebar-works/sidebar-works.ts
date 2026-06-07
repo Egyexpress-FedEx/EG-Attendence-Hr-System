@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, inject, Input, OnInit, Output, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { TranslateBtn } from '../../translate-btn/translate-btn';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface NavItem {
   label: string;
@@ -11,7 +13,7 @@ export interface NavItem {
 @Component({
   selector: 'app-sidebar-works',
   standalone: true,
-  imports: [CommonModule , RouterLink , RouterLinkActive ,RouterModule],
+  imports: [CommonModule , RouterLink , RouterLinkActive ,RouterModule , TranslateBtn , TranslatePipe],
   templateUrl: './sidebar-works.html',
   styleUrl: './sidebar-works.css',
 })
