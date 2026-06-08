@@ -291,6 +291,9 @@ body.dark-theme .login-right {
   .login-card h2 {
     font-size: 1.8rem;
   }
+  :host-context([dir='rtl']) input::placeholder{
+  right: 40px;
+}
 }
 
 @media (max-width: 576px) {
@@ -316,4 +319,7 @@ body.dark-theme .login-right {
   .login-btn {
     height: 50px;
   }
+  :host-context([dir='rtl']) input::placeholder{
+  right: 40px;
+}
 }
