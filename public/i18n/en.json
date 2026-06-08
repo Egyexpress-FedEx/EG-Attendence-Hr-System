@@ -14,6 +14,19 @@
      "Recruitment":"Recruitment",
      "applications":"applications",
      "Job Offers":"Job Offers",
-     "Approvals":"Approvals"
-  }
+     "Approvals":"Approvals",
+     "EG":"EG",
+     "xpress":"xpress"
+  },
+  "login":{
+     "HR Management System":"HR Management System",
+     "Manage employees, attendance and payroll easily.":"Manage employees, attendance and payroll easily.",
+      "Welcome Back": "Welcome Back",
+      "Username":"Username",
+      "Password":"Password",
+      "Forgot Password?":"Forgot Password?",
+      "Enter Username":"Enter Username",
+      "ُEnter Password":"Enter Password",
+      "Login":"login"
+    }
 }

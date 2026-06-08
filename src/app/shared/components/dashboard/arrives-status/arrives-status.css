@@ -1,0 +1,242 @@
+.leave-request-card,
+.status-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.section-header,
+.status-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h5,
+.status-header h5 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.leave-table {
+  margin: 0;
+}
+
+.leave-table thead {
+  background: #f4f5ff;
+}
+
+.leave-table th {
+  white-space: nowrap;
+  font-size: .85rem;
+  color: var(--text-secondary);
+  border: none;
+}
+
+.leave-table td {
+  border-color: var(--tr-borfer);
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.employee-info img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.accept-btn,
+.reject-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 15px;
+  font-size: .85rem;
+}
+
+.status-body {
+  padding: 20px;
+}
+
+.employee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.employee-row:last-child {
+  margin-bottom: 0;
+}
+
+.employee-row h6 {
+  margin: 0;
+  font-size: .95rem;
+}
+
+.employee-row span {
+  font-size: .8rem;
+  color: var(--text-secondary);
+}
+
+.date-pill {
+  background: var(--pill-bg);
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: .85rem;
+}
+
+.green-pill,
+.red-pill,
+.check-pill {
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.green-pill {
+  background: #e8faeb;
+  color: #25a244;
+}
+
+.red-pill {
+  background: #ffe8eb;
+  color: #e63946;
+}
+
+.check-pill {
+  background: #ffe8eb;
+  color: #e63946;
+}
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ======================
+   TABLET
+====================== */
+
+@media (max-width: 992px) {
+
+  .leave-request-card {
+    margin-top: 30px;
+  }
+
+  .accept-btn,
+  .reject-btn {
+    padding: 6px 12px;
+    font-size: .8rem;
+  }
+}
+
+/* ======================
+   MOBILE TABLE => CARDS
+====================== */
+
+@media (max-width: 768px) {
+
+  .table-responsive {
+    overflow: visible;
+  }
+
+  .leave-table thead {
+    display: none;
+  }
+
+  .leave-table,
+  .leave-table tbody,
+  .leave-table tr,
+  .leave-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .leave-table tr {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin: 15px;
+    padding: 15px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .leave-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border: none;
+    padding: 10px 0;
+
+    text-align: right;
+  }
+
+  .leave-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+  }
+
+  .employee-info {
+    justify-content: flex-end;
+  }
+
+  .leave-table td:last-child {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .action-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accept-btn,
+  .reject-btn {
+    width: 100%;
+  }
+}
+
+/* ======================
+   SMALL MOBILE
+====================== */
+
+@media (max-width: 576px) {
+
+  .section-header {
+    padding: 16px;
+  }
+
+  .section-header h5 {
+    font-size: 1rem;
+  }
+
+  .leave-table tr {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  .leave-table td {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .leave-table td::before {
+    margin-bottom: 5px;
+  }
+}

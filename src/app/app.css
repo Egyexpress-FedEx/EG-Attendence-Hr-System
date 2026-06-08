@@ -10,24 +10,24 @@
 
 /* Desktop */
 .content-expanded {
-  margin-left: 220px;
+  margin-inline-start: 220px;
   width: calc(100% - 220px);
 }
 
 .content-collapsed {
-  margin-left: 70px;
+  margin-inline-start: 70px;
   width: calc(100% - 70px);
 }
 
 /* Tablet */
 @media (max-width: 992px) {
   .content-expanded {
-    margin-left: 200px;
+    margin-inline-start: 200px;
     width: calc(100% - 200px);
   }
 
   .content-collapsed {
-    margin-left: 70px;
+    margin-inline-start: 70px;
     width: calc(100% - 70px);
   }
 }
@@ -39,12 +39,12 @@
   } */
 
   .content-expanded {
-    margin-left: 180px;
+    margin-inline-start: 180px;
     width: calc(100% - 180px);
   }
 
   .content-collapsed {
-    margin-left: 60px !important;
+    margin-inline-start: 60px !important;
     width: calc(100% - 60px) !important;
   }
 }

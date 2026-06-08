@@ -10,7 +10,7 @@ type language = 'en' |  'ar' ;
 export class Translation {
   private readonly translateService = inject(TranslateService)
   private readonly platformid = inject(PLATFORM_ID)
- currentLang = signal<language>('en')
+  currentLang = signal<language>('en')
  
   //first step method to change lang + save it in localstorage
 
@@ -19,7 +19,7 @@ export class Translation {
       this.translateService.use(lang)
       localStorage.setItem('lang',lang)
       this.currentLang.set(lang)
-      //this.setDirection(lang)
+      this.setDirection(lang)
   }
 
   // second step method to get lang from local storage
@@ -30,11 +30,11 @@ export class Translation {
   this.switclangg(lang)
   }
 
- // third step app direction --> cuurent this method disable 
+// third step app direction --> cuurent this method disable 
 
-//   private setDirection(lang:language){
-//     const dir = lang === 'en' ? 'ltr' : 'rtl' ;
-//     document.documentElement.dir=dir;
-//     document.documentElement.lang=lang;
-//   }
+  private setDirection(lang:language){
+    const dir = lang === 'en' ? 'ltr' : 'rtl' ;
+    document.documentElement.dir=dir;
+    document.documentElement.lang=lang;
+  }
  }

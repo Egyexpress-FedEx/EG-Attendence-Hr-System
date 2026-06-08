@@ -14,6 +14,20 @@
         "Recruitment":"التوظيف",
         "applications":"طلبات توظيف",
         "Job Offers": "العروض الوظيفيه",
-        "Approvals": "الموفقات"
+        "Approvals": "الموفقات",
+        "EG":"ايجي",
+        "xpress":"اكسبرس"
+    },
+
+    "login":{
+        "HR Management System":"نظام اداره الموارد البشريه",
+       "Manage employees, attendance and payroll easily.":"اداره الموظفين والحضور و المرتبات والاجازات ",
+      "Welcome Back":"مرحبًا بعودتك",
+      "Username":"اسم المستخدم",
+      "Password":"كلمه السر",
+      "Forgot Password?":"هل نسيت كلمه السر",
+      "Enter Username":"ادخل اسم المستخدم",
+      "ُEnter Password":"ادخل كلمه السر",
+      "Login":"دخول"
     }
 }

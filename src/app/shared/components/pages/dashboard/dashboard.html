@@ -1,1 +1,103 @@
-<p>dashboard works!</p>
+<div class="dashboard-container mb-5">
+  <!-- OVERVIEW -->
+
+  <div class="row g-4">
+
+    <div class="col-xl-2 col-lg-4 col-md-6">
+      <div class="overview-card">
+
+        <div class="card-top">
+          <div class="icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+        </div>
+
+        <h3>57</h3>
+
+        <p>Attendance</p>
+
+      </div>
+    </div>
+
+    <div class="col-xl-2 col-lg-4 col-md-6">
+      <div class="overview-card">
+
+        <div class="card-top">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+        </div>
+
+        <h3>23</h3>
+
+        <p>Late Arrivals</p>
+
+      </div>
+    </div>
+
+    <div class="col-xl-2 col-lg-4 col-md-6">
+      <div class="overview-card">
+
+        <div class="card-top">
+          <div class="icon">
+            <i class="fas fa-user-times"></i>
+          </div>
+        </div>
+
+        <h3>3</h3>
+
+        <p>Absent</p>
+
+      </div>
+    </div>
+
+    <div class="col-xl-2 col-lg-4 col-md-6">
+      <div class="overview-card">
+
+        <div class="card-top">
+          <div class="icon">
+            <i class="fas fa-calendar-minus"></i>
+          </div>
+
+        </div>
+
+        <h3>6</h3>
+
+        <p>Leave Apply</p>
+
+      </div>
+    </div>
+
+    <div class="col-xl-4">
+
+      <div class="employee-card">
+
+        <div>
+          <h5>Total Employees</h5>
+
+          <h2>57</h2>
+
+          <div class="legend">
+            <span class="male"></span> Men
+          </div>
+
+          <div class="legend">
+            <span class="female"></span> Women
+          </div>
+
+        </div>
+
+        <div class="circle-chart">
+          57
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <app-leave-req-table></app-leave-req-table>
+  <app-arrives-status></app-arrives-status>
+
+</div>
