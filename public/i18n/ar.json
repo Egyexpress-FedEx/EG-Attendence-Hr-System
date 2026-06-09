@@ -29,5 +29,21 @@
       "Enter Username":"ادخل اسم المستخدم",
       "ُEnter Password":"ادخل كلمه السر",
       "Login":"دخول"
+    },
+    "help":{
+        "Help Center":"مركز المساعد",
+        "Everything you need to use the Attendance System.":"Everything you need to use the Attendance System.",
+        "Search for help":"Search for help",
+        "Attendance":"Attendance",
+        "Dashboard":"Dashboard",
+        "Fingerprint Devices":"Fingerprint Devices",
+        "Settings":"Settings",
+        "Frequently Asked Questions":"Frequently Asked Questions",
+        "How do I synchronize fingerprint devices ?":"How do I synchronize fingerprint devices ?",
+        "Open Fingerprint Devices page and click Synchronize. ":"Open Fingerprint Devices page and click Synchronize. ",
+        "How can I viewHow can I view attendance records?":"How can I view attendance records?",
+        "Navigate to Attendance page and select the desired date range.":"Navigate to Attendance page and select the desired date range.",
+        "Why is an employee not appearing?":"Why is an employee not appearing?",
+        "Verify employee data and device synchronization status.":"Verify employee data and device synchronization status."
     }
 }

@@ -151,6 +151,7 @@ html[dir="ltr"] .welcome-content {
   top: 50%;
 }
 
+
 .form-control {
   height: 55px;
 
@@ -168,6 +169,13 @@ input::placeholder{
   color: var(--input-placeholder) !important;
   position: absolute;
 }
+:host-context([dir="rtl"]) input::placeholder{
+  right:40px !important;
+}
+:host-context([dir="rtl"]) input{
+  padding-right:40px !important;
+}
+
 
 
 
