@@ -112,6 +112,10 @@
 .accordion-body {
   color: var(--text-secondary);
 }
+:host-context([dir="rtl"]) .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
 
 .support-box {
   margin-top: 40px;

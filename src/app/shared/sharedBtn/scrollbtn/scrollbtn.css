@@ -14,6 +14,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+:host-context([dir='rtl']) .scroll-to-top{
+  right: 95% !important;
+}
 
 
 .scroll-to-top:hover {
@@ -41,4 +44,29 @@
   100% {
     transform: translateY(0);
   }
+}
+@media (max-width:1200px) {
+  :host-context([dir='rtl']) .scroll-to-top{
+  right: 93% !important;
+}
+}
+@media (max-width:900px) {
+  :host-context([dir='rtl']) .scroll-to-top{
+  right: 92% !important;
+}
+}
+@media (max-width:750px) {
+  :host-context([dir='rtl']) .scroll-to-top{
+  right: 90% !important;
+}
+}
+@media (max-width:550px) {
+  :host-context([dir='rtl']) .scroll-to-top{
+  right: 85% !important;
+}
+}
+@media (max-width:350px) {
+  :host-context([dir='rtl']) .scroll-to-top{
+  right: 80% !important;
+}
 }

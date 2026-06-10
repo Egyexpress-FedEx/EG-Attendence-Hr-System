@@ -4,14 +4,15 @@
   <div class="help-hero">
     <div class="text-center">
       <i class="fas fa-circle-question hero-icon"></i>
-      <h1>Help Center</h1>
-      <p>Everything you need to use the Attendance System.</p>
+      <h1>{{'help.Help Center' |translate}}</h1>
+      
+      <p>{{'help.Everything you need to use the Attendance System.' |translate}}.</p>
 
       <div class="search-box">
         <input
           type="text"
           class="form-control"
-          placeholder="Search for help..."
+          [placeholder]="'help.Search for help'|translate"
         />
       </div>
     </div>
@@ -26,10 +27,10 @@
           <i class="fas fa-fingerprint"></i>
         </div>
 
-        <h5>Fingerprint Devices</h5>
+        <h5>{{"help.Fingerprint Devices" |translate}}</h5>
 
         <p>
-          Manage fingerprint devices and synchronization settings.
+          {{"help.Manage fingerprint devices and synchronization settings." |translate}}
         </p>
       </div>
     </div>
@@ -40,10 +41,10 @@
           <i class="fas fa-clock"></i>
         </div>
 
-        <h5>Attendance</h5>
+        <h5>{{'help.Attendance'|translate}}</h5>
 
         <p>
-          View check-in and check-out records for employees.
+          {{'help.View check-in and check-out records for employees.' |translate}}
         </p>
       </div>
     </div>
@@ -54,10 +55,10 @@
           <i class="fas fa-chart-line"></i>
         </div>
 
-        <h5>Dashboard</h5>
+        <h5>{{"help.Dashboard"|translate}}</h5>
 
         <p>
-          Monitor attendance statistics and daily activity.
+          {{"help.Monitor attendance statistics and daily activity."|translate}}
         </p>
       </div>
     </div>
@@ -68,10 +69,10 @@
           <i class="fas fa-gear"></i>
         </div>
 
-        <h5>Settings</h5>
+        <h5>{{"help.Settings"|translate}}</h5>
 
         <p>
-          Configure system preferences and options.
+          {{"help.Configure system preferences and options."|translate}}
         </p>
       </div>
     </div>
@@ -82,7 +83,7 @@
   <div class="faq-section">
 
     <div class="section-title">
-      <h3>Frequently Asked Questions</h3>
+      <h3>{{"help.Frequently Asked Questions"|translate}}</h3>
     </div>
 
     <div class="accordion" id="faqAccordion">
@@ -95,7 +96,7 @@
             data-bs-toggle="collapse"
             data-bs-target="#faq1"
           >
-            How do I synchronize fingerprint devices?
+            {{"help.How do I synchronize fingerprint devices ?" |translate}}
           </button>
         </h2>
 
@@ -105,7 +106,7 @@
           data-bs-parent="#faqAccordion"
         >
           <div class="accordion-body">
-            Open Fingerprint Devices page and click Synchronize.
+            {{"help.Open Fingerprint Devices page and click Synchronize. "|translate}}
           </div>
         </div>
       </div>
@@ -118,7 +119,7 @@
             data-bs-toggle="collapse"
             data-bs-target="#faq2"
           >
-            How can I view attendance records?
+            {{"help.How can I viewHow can I view attendance records?"|translate}}
           </button>
         </h2>
 
@@ -128,7 +129,7 @@
           data-bs-parent="#faqAccordion"
         >
           <div class="accordion-body">
-            Navigate to Attendance page and select the desired date range.
+            {{"help.Navigate to Attendance page and select the desired date range."|translate}}
           </div>
         </div>
       </div>
@@ -141,7 +142,7 @@
             data-bs-toggle="collapse"
             data-bs-target="#faq3"
           >
-            Why is an employee not appearing?
+            {{"help.Why is an employee not appearing?"|translate}}
           </button>
         </h2>
 
@@ -151,7 +152,7 @@
           data-bs-parent="#faqAccordion"
         >
           <div class="accordion-body">
-            Verify employee data and device synchronization status.
+            {{"help.Verify employee data and device synchronization status."|translate}}
           </div>
         </div>
       </div>
@@ -164,16 +165,16 @@
 
     <div class="support-content">
 
-      <h3>{{"Need More Help?" | translate}}</h3>
+      <h3>{{"help.Need More Help?" | translate}}</h3>
 
       <p>
-        Contact the web developer for assistance.
+        {{"help.Contact the web developer for assistance."|translate}}
       </p>
 
       <div class="contact-info">
         <span><i class="fas fa-envelope"></i> ahmed.abdelrahman@egyptexpress.com.eg</span>
-        <span><i class="fas fa-phone"></i> +20 1018097608</span>
-        <span><i class="fa-solid fa-tty"></i> 1505 </span>
+        <span><i class="fa-brands fa-whatsapp"></i> {{"help.+20 1016887780"|translate}}</span>
+        <span><i class="fa-solid fa-tty"></i> {{"help.1505"|translate}} </span>
       </div>
 
     </div>

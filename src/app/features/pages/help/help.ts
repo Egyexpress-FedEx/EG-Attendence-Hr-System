@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HelpComponent } from '../../../shared/components/pages/help/help';
+import { debounce } from 'rxjs';
 
 @Component({
   selector: 'app-help',

@@ -32,17 +32,42 @@
     "help":{
         "Help Center":"Help Center",
         "Everything you need to use the Attendance System.":"Everything you need to use the Attendance System.",
-        "Search for help":"Search for help",
+        "Search for help":"Search for help...",
         "Attendance":"Attendance",
         "Dashboard":"Dashboard",
         "Fingerprint Devices":"Fingerprint Devices",
         "Settings":"Settings",
+        "Manage fingerprint devices and synchronization settings.":"Manage fingerprint devices and synchronization settings.",
+        "View check-in and check-out records for employees.":"View check-in and check-out records for employees.",
+        "Monitor attendance statistics and daily activity.":"Monitor attendance statistics and daily activity.",
+        "Configure system preferences and options.":"Monitor attendance statistics and daily activity.",
         "Frequently Asked Questions":"Frequently Asked Questions",
         "How do I synchronize fingerprint devices ?":"How do I synchronize fingerprint devices ?",
         "Open Fingerprint Devices page and click Synchronize. ":"Open Fingerprint Devices page and click Synchronize. ",
         "How can I viewHow can I view attendance records?":"How can I view attendance records?",
         "Navigate to Attendance page and select the desired date range.":"Navigate to Attendance page and select the desired date range.",
         "Why is an employee not appearing?":"Why is an employee not appearing?",
-        "Verify employee data and device synchronization status.":"Verify employee data and device synchronization status."
+        "Verify employee data and device synchronization status.":"Verify employee data and device synchronization status.",
+        "Need More Help?":"Need More Help?",
+        "Contact the web developer for assistance.":"Contact the web developer for assistance.",
+        "+20 1016887780":"+20 1016887780",
+        "1505":"1505"
+
+    },
+    "Dashboard":{
+
+    },
+    "home":{
+
+    },
+    "Attendance":{
+
+    },
+    "overtime":{
+
+    },
+    "finger-Device":{
+
     }
+
 }

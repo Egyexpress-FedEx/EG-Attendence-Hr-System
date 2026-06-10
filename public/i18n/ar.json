@@ -18,7 +18,6 @@
         "EG":"ايجي",
         "xpress":"اكسبرس"
     },
-
     "login":{
         "HR Management System":"نظام اداره الموارد البشريه",
        "Manage employees, attendance and payroll easily.":"اداره الموظفين والحضور و المرتبات والاجازات ",
@@ -32,18 +31,41 @@
     },
     "help":{
         "Help Center":"مركز المساعد",
-        "Everything you need to use the Attendance System.":"Everything you need to use the Attendance System.",
-        "Search for help":"Search for help",
-        "Attendance":"Attendance",
-        "Dashboard":"Dashboard",
-        "Fingerprint Devices":"Fingerprint Devices",
-        "Settings":"Settings",
-        "Frequently Asked Questions":"Frequently Asked Questions",
-        "How do I synchronize fingerprint devices ?":"How do I synchronize fingerprint devices ?",
-        "Open Fingerprint Devices page and click Synchronize. ":"Open Fingerprint Devices page and click Synchronize. ",
-        "How can I viewHow can I view attendance records?":"How can I view attendance records?",
-        "Navigate to Attendance page and select the desired date range.":"Navigate to Attendance page and select the desired date range.",
-        "Why is an employee not appearing?":"Why is an employee not appearing?",
-        "Verify employee data and device synchronization status.":"Verify employee data and device synchronization status."
+        "Everything you need to use the Attendance System.":"كل ما تحتاجه لاستخدام نظام الحضور.",
+        "Search for help":"ابحث عن المساعدة...",
+        "Attendance":"حضور",
+        "Dashboard":"لوحة التحكم",
+        "Fingerprint Devices":"أجهزة بصمات الأصابع",
+        "Settings":"إعدادات",
+        "Manage fingerprint devices and synchronization settings.":"إدارة أجهزة بصمات الأصابع وإعدادات المزامنة.",
+        "View check-in and check-out records for employees.":"عرض سجلات دخول وخروج الموظفين.",
+        "Monitor attendance statistics and daily activity.":"مراقبة إحصائيات الحضور والنشاط اليومي.",
+        "Configure system preferences and options.":"مراقبة إحصائيات الحضور والنشاط اليومي.",
+        "Frequently Asked Questions":"الأسئلة الشائعة",
+        "How do I synchronize fingerprint devices ?":"كيف أقوم بمزامنة أجهزة بصمة الإصبع؟",
+        "Open Fingerprint Devices page and click Synchronize. ":"  افتح صفحة أجهزة بصمات الأصابع وانقر على مزامنه ",
+        "How can I viewHow can I view attendance records?":"كيف يمكنني الاطلاع على سجلات الحضور؟",
+        "Navigate to Attendance page and select the desired date range.":"انتقل إلى صفحة الحضور وحدد نطاق التاريخ المطلوب.",
+        "Why is an employee not appearing?":"لماذا لا يحضر أحد الموظفين؟",
+        "Verify employee data and device synchronization status.":"تحقق من بيانات الموظفين وحالة مزامنة الأجهزة.",
+        "Need More Help?":"هل تحتاج إلى مزيد من المساعدة؟",
+        "Contact the web developer for assistance.":"تواصل مع مطور الموقع  للحصول على المساعدة.",
+        "+20 1016887780":"٠١٠١٦٨٨٧٧٨٠",
+        "1505":"١٥٠٥"
+    },
+     "Dashboard":{
+
+    },
+    "home":{
+
+    },
+    "Attendance":{
+
+    },
+    "overtime":{
+
+    },
+    "finger-Device":{
+
     }
 }
