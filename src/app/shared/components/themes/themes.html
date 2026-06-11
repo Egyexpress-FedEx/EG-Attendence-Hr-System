@@ -1,0 +1,15 @@
+<button
+        class="theme-btn"
+        [class.active]="!isDarkTheme()"
+        (click)="setTheme(false)"
+      >
+        <i class="ti ti-sun"></i>
+      </button>
+
+      <button
+        class="theme-btn"
+        [class.active]="isDarkTheme()"
+        (click)="setTheme(true)"
+      >
+        <i class="ti ti-moon"></i>
+      </button>

@@ -1,5 +1,6 @@
-<div class="layout">
-
+<div>
+  @if(viewiflogin()){
+    <div class="layout">
   <app-sidebar-works
     [isExpanded]="isExpanded"
     (toggleSidebar)="toggleSidebar()">
@@ -16,3 +17,10 @@
   </main>
 
 </div>
+  }@else {
+    <app-login></app-login>
+  }
+
+
+</div>
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Dashboardcomonents } from '../../../shared/components/pages/dashboard/dashboard';
 
 @Component({
@@ -7,4 +7,6 @@ import { Dashboardcomonents } from '../../../shared/components/pages/dashboard/d
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
-export class Dashboard {}
+export class Dashboard{
+  
+}

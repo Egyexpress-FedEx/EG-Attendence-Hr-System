@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ArrivesStatus } from '../../dashboard/arrives-status/arrives-status';
 import { LeaveReqTable } from '../../dashboard/leave-req-table/leave-req-table';
 
@@ -8,4 +8,6 @@ import { LeaveReqTable } from '../../dashboard/leave-req-table/leave-req-table';
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
-export class Dashboardcomonents {}
+export class Dashboardcomonents {
+
+}

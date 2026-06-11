@@ -1,5 +1,6 @@
 <div class="login-page">
 
+ 
   <div class="login-left">
     <div class="overlay"></div>
 
@@ -10,8 +11,14 @@
   </div>
 
   <div class="login-right">
+    
 
     <div class="login-card">
+     <!-- <div class="d-flex">
+     <app-translate-btn></app-translate-btn>
+     <app-themes class="text-white"></app-themes> 
+     </div> -->
+      
 
       <div class="logo-section">
         <img src="/images/LOGO-2.png" alt="FedEx Logo" loading="lazy">
@@ -29,7 +36,9 @@
             <i class="fa-regular fa-user"></i>
 
             <input
-              type="text"
+             [(ngModel)]="email"
+               [ngModelOptions]="{ standalone: true }"
+              type="email"
               class="form-control"
               [placeholder]="'login.Enter Username' |translate" >
           </div>
@@ -45,6 +54,8 @@
             <i class="fa-solid fa-lock"></i>
 
             <input
+              [(ngModel)]="password"
+                [ngModelOptions]="{ standalone: true }"
               type="password"
               class="form-control"
               [placeholder]="'login.ُEnter Password' | translate" 
@@ -58,7 +69,7 @@
           <a routerLink="/forget-password">{{'login.Forgot Password?' | translate }}</a>
         </div>
 
-        <button class="btn login-btn w-100">
+        <button class="btn login-btn w-100"  (click)="loginsubmit()">
           {{'login.Login' | translate }}
         </button>
 

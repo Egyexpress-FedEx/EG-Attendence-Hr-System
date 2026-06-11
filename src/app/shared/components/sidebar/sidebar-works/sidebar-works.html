@@ -24,8 +24,9 @@
     </button>
   </div>
 
-  <!-- main nav -->
+ <!-- main nav -->
   <nav class="nav-section">
+     @if(userlogin()){
 
     <!-- Dashboard -->
     <a
@@ -224,8 +225,8 @@
       <i class="ti ti-help-circle nav-icon"></i>
       <span class="nav-label">{{ 'sidebar.Help' | translate }}</span>
     </a>
-
-    <!-- Login -->
+  }@else {
+   <!-- Login -->
     <a
       class="nav-item"
       routerLink="/login"
@@ -235,8 +236,13 @@
       <i class="ti ti-login nav-icon"></i>
       <span class="nav-label">{{ 'sidebar.Login' | translate }}</span>
     </a>
+  }
+
+   
 
   </nav>
+ 
+ 
 
   <div class="divider"></div>
 
@@ -258,21 +264,7 @@
     </div>
 
     <div class="theme-toggle">
-      <button
-        class="theme-btn"
-        [class.active]="!isDarkTheme()"
-        (click)="setTheme(false)"
-      >
-        <i class="ti ti-sun"></i>
-      </button>
-
-      <button
-        class="theme-btn"
-        [class.active]="isDarkTheme()"
-        (click)="setTheme(true)"
-      >
-        <i class="ti ti-moon"></i>
-      </button>
+      <app-themes></app-themes>
     </div>
 
   </div>

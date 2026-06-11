@@ -1,0 +1,33 @@
+/* 
+   THEME
+ */
+
+.theme-toggle {
+  margin: 10px;
+  padding: 4px;
+  background: var(--togle-bg);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.theme-btn {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  color: #7f7fb0;
+}
+
+.theme-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.collapsed .theme-toggle {
+  flex-direction: column;
+  align-items: center;
+}

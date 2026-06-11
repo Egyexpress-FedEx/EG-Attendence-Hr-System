@@ -3,28 +3,30 @@ import { Component, EventEmitter, inject, Input, OnInit, Output, signal } from '
 import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 import { TranslateBtn } from '../../translate-btn/translate-btn';
 import { TranslatePipe } from '@ngx-translate/core';
+import { email, form, required } from '@angular/forms/signals';
+import { loginser } from '../../../../core/services/auth/login';
+import { Login } from '../../Authentcations/login/login';
+import { Themes } from '../../themes/themes';
 
 export interface NavItem {
   label: string;
   icon: string;
   routerLink?: string;
 }
-
 @Component({
   selector: 'app-sidebar-works',
   standalone: true,
-  imports: [CommonModule , RouterLink , RouterLinkActive ,RouterModule , TranslateBtn , TranslatePipe],
+  imports: [CommonModule ,Themes , RouterLink , RouterLinkActive ,RouterModule , TranslateBtn , TranslatePipe],
   templateUrl: './sidebar-works.html',
   styleUrl: './sidebar-works.css',
 })
-export class SidebarWorks  implements OnInit {
-  
+export class SidebarWorks    {
+
   @Input() isExpanded = true;
   @Output() toggleSidebar = new EventEmitter<void>();
 
   //#region declartions
 
-  isDarkTheme = signal(false);
   router=inject(Router);
   isAttendanceOpen =signal(false) ;
   ispayrollmangment=signal(false);
@@ -34,20 +36,6 @@ export class SidebarWorks  implements OnInit {
   leavesMangement=signal(false);
  //#endregion
 
-ngOnInit(): void {
-   if (typeof window !== 'undefined') {
-
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme === 'dark') {
-      this.isDarkTheme.set(true);
-      document.body.classList.add('dark-theme');
-    }
-
-  }
-  
-}
-
   bottomNav: NavItem[] = [
     { label: 'Log out', icon: 'ti-logout' , routerLink: '/login' },
   ];
@@ -55,22 +43,18 @@ ngOnInit(): void {
   toggle(): void {
     this.toggleSidebar.emit();
   }
- //#region  dark mode
-  setTheme(dark: boolean): void {
-    this.isDarkTheme.set(dark);
-     if (dark) {
-    document.body.classList.add('dark-theme');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.body.classList.remove('dark-theme');
-    localStorage.setItem('theme', 'light');
-  }
-  }
-  //#endregion
+ 
+
 
   //#region logout hundeltion
+
+  loginAuthser=inject(loginser)
+  userlogin =this.loginAuthser.userlogin
   logout(){
      this.router.navigate(['/login'])
+     localStorage.removeItem('user')
+     this.loginAuthser.user.set(null)
+     this.userlogin.set(false)
   }
   //#endregion
 }
