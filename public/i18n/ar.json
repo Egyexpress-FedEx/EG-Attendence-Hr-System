@@ -17,7 +17,10 @@
         "Approvals": "الموفقات",
         "EG":"ايجي",
         "xpress":"اكسبرس",
-        "Payroll":"كشوف المرتبات "
+        "Payroll":"كشوف المرتبات ",
+        "Reports":"التقارير",
+        "manual Attendance":"الحضور اليدوي",
+         "Holiday":"الاجازات"
     },
     "login":{
         "HR Management System":"نظام اداره الموارد البشريه",

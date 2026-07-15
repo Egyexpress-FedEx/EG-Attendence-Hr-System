@@ -40,7 +40,7 @@
     </a>
 
     <!-- Home -->
-    <a
+    <!-- <a
       class="nav-item"
       routerLink="/home"
       routerLinkActive="active"
@@ -48,7 +48,7 @@
     >
       <i class="ti ti-home nav-icon"></i>
       <span class="nav-label">{{ 'sidebar.Home' | translate }}</span>
-    </a>
+    </a> -->
     <!-- Attendance Module -->
     <div class="menu-group">
 
@@ -75,6 +75,17 @@
 
           <a
             class="nav-item sub-item"
+            routerLink="/overTime"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-dashboard  nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Dashboard' | translate }}
+            </span>
+          </a>
+
+          <a
+            class="nav-item sub-item"
             routerLink="/attendance"
             routerLinkActive="active"
           >
@@ -89,9 +100,19 @@
             routerLink="/overTime"
             routerLinkActive="active"
           >
-            <i class="ti ti-clock-plus  nav-icon"></i>
+            <i class="ti ti-edit-circle  nav-icon"></i>
             <span class="nav-label">
-              {{ 'sidebar.Over Time' | translate }}
+              {{ 'sidebar.manual Attendance' | translate }}
+            </span>
+          </a>
+          <a
+            class="nav-item sub-item"
+            routerLink="/overTime"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-calendar-off  nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Holiday' | translate }}
             </span>
           </a>
 
@@ -106,13 +127,24 @@
             </span>
           </a>
 
+          <a
+            class="nav-item sub-item"
+            routerLink="/FingerDevic"
+            routerLinkActive="active"
+          >
+            <i class="ti ti-report-analytics nav-icon"></i>
+            <span class="nav-label">
+              {{ 'sidebar.Reports' | translate }}
+            </span>
+          </a>
+
         </div>
 
       }
 
     </div>
     <!-- Payroll Module -->
-    <div class="menu-group">
+    <!-- <div class="menu-group">
       <a
         class="nav-item dropdown-toggle-item"
         (click)="isPayrollOpen.set(!isPayrollOpen())"
@@ -179,9 +211,9 @@
 
       }
 
-    </div>
+    </div> -->
     <!-- leaving Module -->
-    <div class="menu-group">
+    <!-- <div class="menu-group">
 
       <a
         class="nav-item dropdown-toggle-item"
@@ -230,9 +262,9 @@
 
       }
 
-    </div>
+    </div> -->
     <!-- recurments Module -->
-    <div class="menu-group">
+    <!-- <div class="menu-group">
 
       <a
         class="nav-item dropdown-toggle-item"
@@ -281,7 +313,7 @@
 
       }
 
-    </div>
+    </div> -->
 
     <!-- Help -->
     <a

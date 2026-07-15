@@ -2,7 +2,7 @@
     "sidebar": {
     "Home": "Home",
     "Dashboard": "Dashboard",
-    "Attendance": "Attendance",
+    "Attendance": "Attendance Log",
     "Over Time": "Over Time",
     "Finger Device": "Finger Device",
     "Help": "Help Center",
@@ -17,7 +17,11 @@
      "Approvals":"Approvals",
      "EG":"EG",
      "xpress":"xpress",
-     "Payroll":"Payroll"
+     "Payroll":"Payroll",
+     "Reports":"Reports",
+     "manual Attendance":"manual Attendance",
+     "Holiday":"Holiday"
+
 
   },
   "login":{
@@ -57,7 +61,7 @@
 
     },
     "Dashboard":{
-
+ 
     },
     "home":{
 
@@ -70,8 +74,6 @@
         "Employee Salary":"Employee Salary",
         "Reports":"Reports",
         "Payroll History":"Payroll History"
-
-
     },
     "overtime":{
 
