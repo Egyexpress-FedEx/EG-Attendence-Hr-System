@@ -16,7 +16,8 @@
         "Job Offers": "العروض الوظيفيه",
         "Approvals": "الموفقات",
         "EG":"ايجي",
-        "xpress":"اكسبرس"
+        "xpress":"اكسبرس",
+        "Payroll":"كشوف المرتبات "
     },
     "login":{
         "HR Management System":"نظام اداره الموارد البشريه",
@@ -60,6 +61,13 @@
 
     },
     "Attendance":{
+
+    },
+    "Payroll":{
+        "Payslips":"مفردات المرتب",
+        "Employee Salary":"رواتب الموظفين",
+        "Reports":"التقارير",
+        "Payroll History":"تاريخ الرواتب"
 
     },
     "overtime":{

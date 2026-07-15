@@ -29,6 +29,7 @@ export class SidebarWorks    {
 
   router=inject(Router);
   isAttendanceOpen =signal(false) ;
+  isPayrollOpen =signal(false) ;
   ispayrollmangment=signal(false);
   isemployeemangment=signal(false);
   isrecuitmenrmangment=signal(false);

@@ -16,7 +16,9 @@
      "Job Offers":"Job Offers",
      "Approvals":"Approvals",
      "EG":"EG",
-     "xpress":"xpress"
+     "xpress":"xpress",
+     "Payroll":"Payroll"
+
   },
   "login":{
      "HR Management System":"HR Management System",
@@ -61,6 +63,14 @@
 
     },
     "Attendance":{
+
+    },
+    "Payroll":{
+        "Payslips":"Payslips",
+        "Employee Salary":"Employee Salary",
+        "Reports":"Reports",
+        "Payroll History":"Payroll History"
+
 
     },
     "overtime":{
